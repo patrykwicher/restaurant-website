@@ -29,7 +29,7 @@ export default {
   margin: 0 auto 0 auto;
 
   .gallery-item {
-    margin: 0.3vw;
+    margin: 0.3vw 0.3vw 0 0.3vw;
   }
   .image-class {
     width: 100%;

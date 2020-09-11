@@ -1,17 +1,17 @@
 <template>
 <div id="description-wrapper">
-  <div id="place">
-    {{ description.place }}
+  <div id="upper-text">
+    {{ description.upperText }}
   </div>
-  <div id="dish">
-    {{ description.dish }}
+  <div id="bottom-text">
+    {{ description.bottomText }}
   </div>
   <div id="underline">
   </div>
   <div id="informations">
     {{ description.informations }}
   </div>
-  <router-link id="more-route" to="/about">M O R E</router-link>
+
 </div>
 </template>
 
@@ -45,13 +45,13 @@ $more-color: #262626;
     margin-top: 5vh;
     margin-bottom: 10vh;
 
-    #place {
+    #upper-text {
         font: 2em $kaushan-font;
         color: $golden-color;
     }
 
-    #dish {
-      font: 2em $josefin-font;
+    #bottom-text {
+      font: 600 2em $josefin-font;
       color: black;
     }
 

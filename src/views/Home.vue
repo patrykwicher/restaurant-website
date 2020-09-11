@@ -4,6 +4,7 @@
   <Title :imageText="imageText" />
   <MenuButton />
   <Description :description="description" />
+  <MoreButton />
   <ImageGallery :images="images" />
   <GalleryText />
   <GoogleMap />
@@ -21,6 +22,7 @@ import Footer from "@/components/Footer.vue";
 import GalleryText from "@/components/GalleryText.vue";
 import GoogleMap from "@/components/GoogleMap.vue";
 import MenuButton from "@/components/MenuButton.vue";
+import MoreButton from "@/components/MoreButton.vue";
 
 export default {
   name: "Home",
@@ -32,8 +34,8 @@ export default {
         subtitle: "Al. Zygmunta Krasińskiego 13, Kraków"
       },
       description: {
-        place: "Haven's",
-        dish: "BEEF BURGERS, STEAKS, FRIES & SHAKES",
+        upperText: "Haven's",
+        bottomText: "BEEF BURGERS, STEAKS, FRIES & SHAKES",
         informations: `Lee's Inn has the best and freshest burgers in town. We grind our meat fresh every day and produce our patties ourselves in the stores. We do not use any
                        pre-made or frozen products. Our buns are freshly baked by us and by ourselves every day. We only use ingredients from regional suppliers that we know
                        personally.`
@@ -74,7 +76,8 @@ export default {
     Footer,
     GalleryText,
     GoogleMap,
-    MenuButton
+    MenuButton,
+    MoreButton
   }
 };
 </script>
