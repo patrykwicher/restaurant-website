@@ -37,7 +37,7 @@ $golden-color: #D2AA5C;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(3, 20vh);
-    margin-bottom: 8vh;
+    margin: -5vh 0 8vh 0;
 
     .dish {
         display: flex;
