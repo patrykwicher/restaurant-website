@@ -4,14 +4,7 @@
     <h2> {{ place }} </h2>
   </div>
   <div id="contact-wrapper">
-    <!-- Copyright &copy; 2020 HAVOC No. 5 -->
-    <!-- <div id="place">
-      <h3> {{ location }} </h3>
-    </div>
-    <div id="phone-number">
-      <h3> {{ phoneNumber }} </h3> -->
       {{ contact }}
-    <!-- </div> -->
   </div>
 </div>
 </template>
@@ -58,5 +51,23 @@ $bg-color: #262626;
       padding-bottom: 4vh;
       justify-content: space-evenly;
     }
+}
+
+@media all and (max-width: 320px) {
+#footer-wrapper {
+  display: block;
+
+  #logo {
+    width: 100%;
+    h2 {
+      font-size: 1.3em;
+      width: 50vw;
+      margin: 2vh auto 2vh auto;
+    }
+  }
+  #contact-wrapper {
+    font-size: 0.7em;
+  }
+}
 }
 </style>

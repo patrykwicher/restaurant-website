@@ -19,6 +19,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 $rubik-font: 'Rubik', sans-serif;
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
     scroll-behavior: smooth;
     font-family: Avenir, Helvetica, Arial, sans-serif;

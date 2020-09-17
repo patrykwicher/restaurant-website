@@ -37,4 +37,10 @@ $rubik-font: 'Rubik', sans-serif;
         }
     }
 }
+
+@media all and (max-width: 600px) {
+  #button-wrapper {
+    margin-top: -2vh;
+  }
+}
 </style>

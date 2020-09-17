@@ -88,5 +88,16 @@ $more-color: #262626;
         border: solid $more-color;
       }
     }
+
+    @media all and (max-width: 600px) {
+      #underline {
+        width: 16vw;
+      }
+
+      #informations {
+        margin: 0 auto 0 auto;
+        width: 80vw;
+      }
+    }
 }
 </style>

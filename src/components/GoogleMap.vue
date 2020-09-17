@@ -29,14 +29,20 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="scss" scoped>
 #map-wrapper {
     margin: 0 auto 0 auto;
-}
 
-#map {
-    margin: 2vh auto 0 auto;
-    width: 100%;
-    height: 90vh;
+    #map {
+        margin: 2vh auto 0 auto;
+        width: 100%;
+        height: 90vh;
+    }
+
+    @media all and (max-width: 320px) {
+      #map {
+        height: 30vh;
+      }
+    }
 }
 </style>

@@ -4,7 +4,7 @@
     <Title :imageText="imageText" />
     <Description :description="description" />
     <MenuComp :menuPositions="menuPositions" />
-    <Footer />
+    <Footer :screenWidth="screenWidth"/>
   </div>
 </template>
 
@@ -18,6 +18,7 @@ import Footer from "@/components/Footer.vue";
   export default {
     data() {
       return {
+        screenWidth: window.innerWidth,
         backgroundImagePath: `url(${require('@/assets/menu-img.jpg')})`,
         imageText: {
           title: "OUR MENU",
@@ -70,3 +71,5 @@ import Footer from "@/components/Footer.vue";
     }
   }
 </script>
+<style lang="scss" scoped>
+</style>

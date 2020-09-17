@@ -43,4 +43,10 @@ export default {
   }
 }
 
+@media all and (max-width: 600px) {
+  #image {
+    display: block;
+  }
+}
+
 </style>

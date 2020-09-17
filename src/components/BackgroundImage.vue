@@ -1,6 +1,6 @@
 <template>
-  <div class="home-image" :style="cssProps ">
-  </div>
+<div class="home-image" :style="cssProps">
+</div>
 </template>
 
 <script>
@@ -12,6 +12,7 @@ export default {
   },
   data() {
     return {
+      screenWidth: window.innerWidth,
       cssProps: {
         background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), ${this.backgroundImageSrc}`,
         backgroundAttachment: 'fixed',
@@ -23,13 +24,28 @@ export default {
       }
     }
   },
+  methods: {
+    changeHeightOfBackgroundImage() {
+      if(this.screenWidth <= 600){
+        this.cssProps.height = '50vh';
+      }
+    }
+  },
+  mounted() {
+    this.changeHeightOfBackgroundImage()
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-  .home-image {
-    height: 88vh;
+.home-image {
     position: relative;
     z-index: 0;
-  }
+}
+
+@media all and (max-width: 600px) {
+  // .home-image {
+  //   height: 20%;
+  // }
+}
 </style>

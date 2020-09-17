@@ -7,7 +7,9 @@
 </template>
 
 <script>
-export default {}
+export default {
+  
+}
 </script>
 
 <style lang="scss" scoped>
@@ -20,5 +22,12 @@ $golden-color: #D2AA5C;
     text-shadow: 1px 1px 1px #4f6377;
     color: $golden-color;
     margin: 44vh auto 7vh auto;
+}
+
+@media all and (max-width: 320px) {
+  #text {
+    font-size: 2em;
+    margin-bottom: 3vh;
+  }
 }
 </style>
