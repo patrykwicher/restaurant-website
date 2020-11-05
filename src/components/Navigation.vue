@@ -6,7 +6,7 @@
     <NavBarsIcon @showHideNavTabs="getCounterValue($event)" />
     <SocialMedia />
   </nav>
-  <NavigationTabsShownByBurger :counterValue="counter" />
+  <NavigationTabsShownByBurger />
   <router-view />
 </div>
 </template>

@@ -30,25 +30,39 @@ export default {
       type: Number,
     }
   },
+  data() {
+    return {
+      windowWidth: window.innerWidth,
+    }
+  },
   methods: {
     ifAboutTab() {
       const url = window.location.href;
-      const windowWidth = window.innerWidth;
+      // const windowWidth = window.innerWidth;
 
-      if (url === `http://localhost:8080/about` && windowWidth <= 320) {
+      if (url === `http://localhost:8080/about` && this.windowWidth <= 320) {
         document.getElementById("title").style.marginTop = "13vh";
         document.getElementById("paragraph-wrapper").style.fontSize = "0.8em";
       }
     },
-    marginTitle() {
-      if (this.counterValue === 1) {
-        document.getElementById("title-wrapper").style.marginTop = "30vh";
+    checkCounter() {
+      if (this.windowWidth <= 320 && this.$store.state.counter === 1) {
+        console.log(this.$store.state.counter)
+        document.getElementById("title").style.marginTop = "-15vh";
       }
+      else {
+        document.getElementById("title").style.top = "-25vh";
+      }
+    }
+  },
+  computed: {
+    count() {
+      return this.$store.state.counter;
     }
   },
   mounted() {
     this.ifAboutTab();
-    this.marginTitle();
+    this.checkCounter();
   }
 }
 </script>

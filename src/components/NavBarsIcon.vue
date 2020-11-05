@@ -1,5 +1,5 @@
 <template lang="html">
-  <div @click="showHideNavTabs()" class="bars">
+  <div @click="showHide()" class="bars">
     <i class="fas fa-bars"></i>
   </div>
 </template>
@@ -23,6 +23,14 @@ export default {
         this.counter--;
         this.$emit('showHideNavTabs', this.counter);
       }
+    },
+    showHide() {
+      this.$store.commit("incrementDecrement");
+    }
+  },
+  computed: {
+    count() {
+      return this.$store.state.counter;
     },
   }
 }

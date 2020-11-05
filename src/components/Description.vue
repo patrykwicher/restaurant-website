@@ -29,7 +29,7 @@ export default {
   },
   methods: {
     menuTabTitleFontSize() {
-      if(this.url === `http://localhost:8080/menu` && this.windowWidth <= 320) {
+      if (this.url === `http://localhost:8080/menu` && this.windowWidth <= 320) {
         document.getElementById("bottom-text").style.fontSize = "1.5em";
       }
     }
@@ -61,56 +61,55 @@ $more-color: #262626;
     }
 
     #bottom-text {
-      font: 600 2em $josefin-font;
-      color: black;
+        font: 600 2em $josefin-font;
+        color: black;
     }
 
     #underline {
-      margin: 1.5vh auto 5vh auto;
-      margin-top: 1 vh;
-      background-color: $golden-color;
-      width: 7vw;
-      height: 0.5vh;
+        margin: 1 vh auto 5vh;
+        background-color: $golden-color;
+        width: 7vw;
+        height: 0.5vh;
     }
 
     #informations {
-      width: 47vw;
-      margin: 0 auto 5vh auto;
-      font: 1em $josefin-font;
-      line-height: 1.5em;
-      text-align: justify;
-      color: #474747;
+        width: 47vw;
+        margin: 0 auto 5vh;
+        font: 1em $josefin-font;
+        line-height: 1.5em;
+        text-align: justify;
+        color: #474747;
     }
 
     #more-route {
-      background: none;
-      font: 600 1.5em $rubik-font;
-      border-radius: 5px;
-      border: solid black;
-      padding: 1.2vh 1.3vw;
-      transition: all 0.2s ease-in-out 0s;
-      text-decoration: none;
-      color: black;
+        background: none;
+        font: 600 1.5em $rubik-font;
+        border-radius: 5px;
+        border: solid black;
+        padding: 1.2vh 1.3vw;
+        transition: all 0.2s ease-in-out 0s;
+        text-decoration: none;
+        color: black;
 
-      &:hover {
-        background-color: $more-color;
-        color: $golden-color;
-        border: solid $more-color;
-      }
+        &:hover {
+            background-color: $more-color;
+            color: $golden-color;
+            border: solid $more-color;
+        }
     }
 }
 
 @media all and (max-width: 320px) {
-  #description-wrapper {
-    margin-top: 2vh;
-  #underline {
-    width: 18vw;
-  }
+    #description-wrapper {
+        margin-top: 2vh;
+        #underline {
+            width: 18vw;
+        }
 
-  #informations {
-    margin: 0 auto 0 auto;
-    width: 80vw;
-  }
-}
+        #informations {
+            margin: 0 auto;
+            width: 80vw;
+        }
+    }
 }
 </style>
