@@ -6,7 +6,11 @@
     <NavBarsIcon @showHideNavTabs="getCounterValue($event)" />
     <SocialMedia />
   </nav>
+<<<<<<< HEAD
   <NavigationTabsShownByBurger />
+=======
+  <NavigationTabsShownByBurger :counterValue="counter" />
+>>>>>>> origin
   <router-view />
 </div>
 </template>
@@ -21,7 +25,11 @@ import NavigationTabsShownByBurger from "@/components/NavigationTabsShownByBurge
 export default {
   data() {
     return {
+<<<<<<< HEAD
       counter: null,
+=======
+      counter: 0,
+>>>>>>> origin
       screenWidth: window.innerWidth,
       goldenColour: `#D2AA5C`,
     }
@@ -37,7 +45,11 @@ export default {
     getCounterValue(counterValue) {
       this.counter = counterValue;
     },
+<<<<<<< HEAD
   },
+=======
+  }
+>>>>>>> origin
 }
 </script>
 

@@ -17,11 +17,14 @@ export default {
     Title,
     Footer
   },
+<<<<<<< HEAD
   props: {
     counterValue: {
       type: Number,
     }
   },
+=======
+>>>>>>> origin
   data() {
     return {
       backgroundImagePath: `url(${require('@/assets/about-img.jpg')})`,

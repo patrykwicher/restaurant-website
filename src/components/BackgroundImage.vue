@@ -26,12 +26,16 @@ export default {
   },
   methods: {
     changeHeightOfBackgroundImage() {
+<<<<<<< HEAD
       const url = window.location.href;
 
       if(this.screenWidth <= 320 && url === `http://localhost:8080/about` || url === `http://localhost:8080/reservations`){
         this.cssProps.height = '84vh';
       }
       else if(this.screenWidth <= 320){
+=======
+      if(this.screenWidth <= 600){
+>>>>>>> origin
         this.cssProps.height = '50vh';
       }
     }
@@ -48,4 +52,12 @@ export default {
     z-index: 0;
 }
 
+<<<<<<< HEAD
+=======
+@media all and (max-width: 600px) {
+  // .home-image {
+  //   height: 20%;
+  // }
+}
+>>>>>>> origin
 </style>

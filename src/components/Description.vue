@@ -11,6 +11,10 @@
   <div id="informations">
     {{ description.informations }}
   </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 </div>
 </template>
 
@@ -23,6 +27,7 @@ export default {
   },
   data() {
     return {
+<<<<<<< HEAD
       url: window.location.href,
       windowWidth: window.innerWidth,
     }
@@ -36,6 +41,10 @@ export default {
   },
   mounted() {
     this.menuTabTitleFontSize();
+=======
+
+    }
+>>>>>>> origin
   }
 }
 </script>
@@ -61,6 +70,7 @@ $more-color: #262626;
     }
 
     #bottom-text {
+<<<<<<< HEAD
         font: 600 2em $josefin-font;
         color: black;
     }
@@ -110,6 +120,55 @@ $more-color: #262626;
             margin: 0 auto;
             width: 80vw;
         }
+=======
+      font: 600 2em $josefin-font;
+      color: black;
+    }
+
+    #underline {
+      margin: 1.5vh auto 5vh auto;
+      margin-top: 1 vh;
+      background-color: $golden-color;
+      width: 7vw;
+      height: 0.5vh;
+    }
+
+    #informations {
+      width: 47vw;
+      margin: 0 auto 5vh auto;
+      font: 1em $josefin-font;
+      line-height: 1.5em;
+      text-align: justify;
+      color: #474747;
+    }
+
+    #more-route {
+      background: none;
+      font: 600 1.5em $rubik-font;
+      border-radius: 5px;
+      border: solid black;
+      padding: 1.2vh 1.3vw;
+      transition: all 0.2s ease-in-out 0s;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        background-color: $more-color;
+        color: $golden-color;
+        border: solid $more-color;
+      }
+    }
+
+    @media all and (max-width: 600px) {
+      #underline {
+        width: 16vw;
+      }
+
+      #informations {
+        margin: 0 auto 0 auto;
+        width: 80vw;
+      }
+>>>>>>> origin
     }
 }
 </style>

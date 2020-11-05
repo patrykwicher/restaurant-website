@@ -25,6 +25,7 @@ export default {
   props: {
     imageText: {
       type: Object,
+<<<<<<< HEAD
     },
     counterValue: {
       type: Number,
@@ -63,6 +64,9 @@ export default {
   mounted() {
     this.ifAboutTab();
     this.checkCounter();
+=======
+    }
+>>>>>>> origin
   }
 }
 </script>
@@ -106,6 +110,7 @@ $title-color: #FFFFFF;
     }
 
     @media all and (max-width: 320px) {
+<<<<<<< HEAD
         #title {
             font-size: 1.7em;
             width: 80vw;
@@ -115,6 +120,17 @@ $title-color: #FFFFFF;
         #subtitle {
             font-size: 1.2em;
         }
+=======
+      #title {
+        font-size: 1.7em;
+        width: 80vw;
+        margin-top: -25vh;
+      }
+
+      #subtitle {
+        font-size: 1.2em;
+      }
+>>>>>>> origin
     }
 
     // @media all and (max-width: 600px) {
@@ -128,4 +144,8 @@ $title-color: #FFFFFF;
     //     }
     // }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 </style>

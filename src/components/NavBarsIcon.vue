@@ -1,11 +1,21 @@
 <template lang="html">
+<<<<<<< HEAD
   <div @click="showHide()" class="bars">
     <i class="fas fa-bars"></i>
+=======
+  <div @click="showHideNavTabs()" class="bars">
+    <i class="fas fa-bars"></i>
+    <NavigationTabsShownByBurger v-if="counter === 1" />
+>>>>>>> origin
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 
+=======
+import NavigationTabsShownByBurger from "@/components/NavigationTabsShownByBurger.vue";
+>>>>>>> origin
 
 export default {
   data() {
@@ -13,6 +23,17 @@ export default {
       counter: 0,
     }
   },
+<<<<<<< HEAD
+=======
+  components: {
+    NavigationTabsShownByBurger,
+  },
+  props: {
+    sendBackCounter: {
+      type: Number,
+    }
+  },
+>>>>>>> origin
   methods: {
     showHideNavTabs() {
       if(this.counter === 0){
@@ -24,6 +45,7 @@ export default {
         this.$emit('showHideNavTabs', this.counter);
       }
     },
+<<<<<<< HEAD
     showHide() {
       this.$store.commit("incrementDecrement");
     }
@@ -32,6 +54,8 @@ export default {
     count() {
       return this.$store.state.counter;
     },
+=======
+>>>>>>> origin
   }
 }
 </script>

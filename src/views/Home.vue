@@ -1,7 +1,12 @@
 <template>
 <div>
+<<<<<<< HEAD
   <BackgroundImage :backgroundImageSrc="backgroundImagePath" />
   <Title :imageText="imageText" :counterValue="counterValue" />
+=======
+  <BackgroundImage :backgroundImageSrc="backgroundImagePath"/>
+  <Title :imageText="imageText" />
+>>>>>>> origin
   <MenuButton />
   <Description :description="description" />
   <MoreButton />
@@ -26,11 +31,14 @@ import MoreButton from "@/components/MoreButton.vue";
 
 export default {
   name: "Home",
+<<<<<<< HEAD
   props: {
     counterValue: {
       type: Number,
     },
   },
+=======
+>>>>>>> origin
   data() {
     return {
       backgroundImagePath: `url(${require('@/assets/home-img.jpg')})`,
@@ -83,7 +91,11 @@ export default {
     GoogleMap,
     MenuButton,
     MoreButton
+<<<<<<< HEAD
   },
+=======
+  }
+>>>>>>> origin
 };
 </script>
 
@@ -92,7 +104,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 $rubik-font: 'Rubik', sans-serif;
 $kaushan-font: 'Kaushan Script', cursive;
+<<<<<<< HEAD
 
 @media all and (max-width: 320px) {
 }
+=======
+>>>>>>> origin
 </style>

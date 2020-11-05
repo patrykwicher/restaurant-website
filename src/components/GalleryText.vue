@@ -8,6 +8,10 @@
 
 <script>
 export default {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> origin
 }
 </script>
 
@@ -20,6 +24,7 @@ $golden-color: #D2AA5C;
     font: 3em $kaushan-font;
     text-shadow: 1px 1px 1px #4f6377;
     color: $golden-color;
+<<<<<<< HEAD
     margin: 44vh auto 7vh;
 }
 
@@ -28,5 +33,15 @@ $golden-color: #D2AA5C;
         font-size: 2em;
         margin-bottom: 3vh;
     }
+=======
+    margin: 44vh auto 7vh auto;
+}
+
+@media all and (max-width: 320px) {
+  #text {
+    font-size: 2em;
+    margin-bottom: 3vh;
+  }
+>>>>>>> origin
 }
 </style>

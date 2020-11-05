@@ -21,7 +21,11 @@ export default {
   computed: {
     contact() {
       return `${this.location}, ${this.phoneNumber}`;
+<<<<<<< HEAD
     },
+=======
+    }
+>>>>>>> origin
   }
 }
 </script>

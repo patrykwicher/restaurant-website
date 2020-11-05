@@ -1,14 +1,23 @@
 <template lang="html">
+<<<<<<< HEAD
   <div id="nav-links" v-if="this.$store.state.counter === 1">
     <router-link class="links" id="home" :to=" { name: 'Home', params: { counterValue: counter }}" @click="decrement()">Home</router-link>
     <router-link class="links" id="about" to="/about" @click="decrement()">About</router-link>
     <router-link class="links" id="menu" to="/menu" @click="decrement()">Menu</router-link>
     <router-link class="links" id="reservations" to="/reservations" @click="decrement()">Reservations</router-link>
+=======
+  <div id="nav-links" v-if="counterValue === 1" @click="changeCounterValue()">
+    <router-link class="links" id="home" to="/">Home</router-link>
+    <router-link class="links" id="about" to="/about">About</router-link>
+    <router-link class="links" id="menu" to="/menu">Menu</router-link>
+    <router-link class="links" id="reservations" to="/reservations">Reservations</router-link>
+>>>>>>> origin
   </div>
 </template>
 
 <script>
 export default {
+<<<<<<< HEAD
   data() {
     return {
       counter: this.counterValue,
@@ -24,6 +33,23 @@ export default {
       return this.$store.state.counter;
     }
   }
+=======
+  props: {
+    counterValue: {
+      type: Number,
+    }
+  },
+  data() {
+    return {
+      counter: 0,
+    }
+  },
+  methods: {
+    changeCounterValue() {
+      this.counterValue = 0;
+    }
+  },
+>>>>>>> origin
 }
 </script>
 
@@ -59,6 +85,7 @@ $golden-color: #D2AA5C;
 }
 
 @media all and (max-width: 320px) {
+<<<<<<< HEAD
     #nav-links {
 
         .links {
@@ -72,5 +99,20 @@ $golden-color: #D2AA5C;
             }
         }
     }
+=======
+  #nav-links {
+
+    .links {
+      margin: 1vh 0 1vh 0;
+      display: block;
+      left: 0;
+      &:focus,
+      &:hover,
+      &active {
+          border-bottom: 4px solid $golden-color;
+      }
+    }
+  }
+>>>>>>> origin
 }
 </style>

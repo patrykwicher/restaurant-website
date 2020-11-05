@@ -8,8 +8,12 @@ const routes = [
   {
     path: "/",
     name: "Home",
+<<<<<<< HEAD
     component: Home,
     props: true
+=======
+    component: Home
+>>>>>>> origin
   },
   {
     path: "/about",

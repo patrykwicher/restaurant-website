@@ -1,7 +1,11 @@
 <template>
   <div class="profile">
     <BackgroundImage :backgroundImageSrc="backgroundImagePath" />
+<<<<<<< HEAD
     <Title :imageText="imageText" :counterValue="counterValue"/>
+=======
+    <Title :imageText="imageText" />
+>>>>>>> origin
     <Description :description="description" />
     <MenuComp :menuPositions="menuPositions" />
     <Footer :screenWidth="screenWidth"/>
@@ -16,11 +20,14 @@ import MenuComp from "@/components/MenuComp.vue";
 import Footer from "@/components/Footer.vue";
 
   export default {
+<<<<<<< HEAD
     props: {
       counterValue: {
         type: Number,
       }
     },
+=======
+>>>>>>> origin
     data() {
       return {
         screenWidth: window.innerWidth,

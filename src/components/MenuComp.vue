@@ -72,6 +72,7 @@ $golden-color: #D2AA5C;
         }
     }
 }
+<<<<<<< HEAD
 
 @media all and (max-width: 320px) {
   .menu-wrapper {
@@ -102,4 +103,6 @@ $golden-color: #D2AA5C;
     }
   }
 }
+=======
+>>>>>>> origin
 </style>

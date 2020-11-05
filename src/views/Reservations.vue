@@ -12,11 +12,14 @@ import Title from "@/components/Title.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
+<<<<<<< HEAD
   props: {
     counterValue: {
       type: Number,
     }
   },
+=======
+>>>>>>> origin
   data() {
     return {
       backgroundImagePath: `url(${require('@/assets/reservation-img.jpg')})`,
